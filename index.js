@@ -13,7 +13,7 @@ const authMiddleware = require('./middlewares/authMiddleware');
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: "https://your-frontend-url.com", credentials: true }));
+app.use(cors({ origin: "https://your-frontend-url.com"}));
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/course-videos', courseVideosRoutes);
